@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        .borde {
+            border: black solid 2px;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+    <h1>Mi titulo <small>este texto es mas claro</small> </h1>
+
+    <h2>Mi ejemplo de codigo</h2>
+
+    <p>El tag para describir imagenes es: <code>&lt;img&gt;</code></p>
+
+
+    <h2>Forms</h2>
+
+    <!--    .row>.col-sm-3+.col-sm-6+.col-sm-3** EMMET-->
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">yo</div>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            <div class="input-group-addon">aq</div>
+                        </div>
+                        
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <h2>User inputs con Bootstrap</h2>
+
+    <p>No esta permitido por ejemplo el
+        <kbd>
+        <kbd>ctrl</kbd> +
+        <kbd>c</kbd>
+        </kbd>
+        ni el
+        <kbd>
+    <kbd>ctrl</kbd> +
+        <kbd>v</kbd>
+        </kbd>
+    </p>
+    <h2>Tablas</h2>
+
+    <table>
+        <tr>
+            <th>asfdasdf</th>
+            <th>asdf</th>
+            <th>asdf</th>
+        </tr>
+        <tr>
+            <td>asf</td>
+            <td>asdf</td>
+            <td>asdf</td>
+        </tr>
+        <tr>
+            <td>asdf</td>
+            <td>asdf</td>
+            <td>asdf</td>
+        </tr>
+    </table>
+
+
+    <table class="table table-condensed ">
+        <!--   TABLE ROW    -->
+        <tr class="active">
+            <!--   TABLE HEADER    -->
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr class="warning">
+            <!--   TABLE DETAIL    -->
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr class="success">
+            <!--   TABLE DETAIL    -->
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr class="info">
+            <!--   TABLE DETAIL    -->
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr class="danger">
+            <!--   TABLE DETAIL    -->
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr>
+            <!--   TABLE DETAIL    -->
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr>
+            <!--   TABLE DETAIL    -->
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr>
+            <!--   TABLE DETAIL    -->
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr>
+            <!--   TABLE DETAIL    -->
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr>
+            <!--   TABLE DETAIL    -->
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr>
+            <!--   TABLE DETAIL    -->
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+    <div class="container" style="background-color:yellow;">
+        <!--       .row*3>h1     EMMET-->
+
+
+
+        <div class="row" style="background-color:green;">
+
+            <!--
+        1 1 1 1 1 1 1 1 1 1 1 1 = 12
+        
+        2   2   2   2   2   2   = 12
+        
+        3     3     3     3     = 12
+        
+        3     2   3     1  3    = 12
+        
+-->
+            <!--            .col-md-4*3>h2     EMMET  -->
+            <h1>Fila1</h1>
+            <!--        md en 890px se hace chiquito-->
+            <div class="col-md-4 borde">
+                <h2>Columna md 4 - 1</h2>
+            </div>
+            <div class="col-md-4 borde">
+                <h2>Columna md 4 - 2</h2>
+            </div>
+            <div class="col-md-4 borde">
+                <h2>Columna md 4 - 3</h2>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="row" style="background-color:#7979f3;">
+
+            <h1>Fila2</h1>
+
+            <!--          .col-sm-3.borde*4>h3 EMMET-->
+            <!--         sm se hace chiquito en 690px -->
+            <div class="col-sm-3 borde">
+                <h3>CSM3 - 1</h3>
+            </div>
+            <div class="col-sm-3 borde">
+                <h3>CSM2 - 2</h3>
+            </div>
+            <div class="col-sm-3 borde">
+                <h3>CSM2 - 3</h3>
+            </div>
+            <div class="col-sm-3 borde">
+                <h3>CSM2 - 4</h3>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="row" style="background-color:red;">
+
+            <h1>Fila3</h1>
+
+            <!--          .col-lg-6.borde*2>h3 EMMET -->
+
+            <div class="col-lg-6 borde">
+                <h3>CLG6 - 1</h3>
+            </div>
+            <div class="col-lg-6 borde">
+                <h3>CLG6 - 2</h3>
+            </div>
+
+        </div>
+
+        <!--      .row>.col-xs-2.borde+.col-xs-5.borde*2-->
+        <div class="row">
+            <div class="col-xs-2 borde">
+                <h2>CXS2 - 1</h2>
+            </div>
+            <div class="col-xs-5 borde">
+                <h2>CXS5 - 2</h2>
+            </div>
+            <div class="col-xs-5 borde">
+                <H2>CXS5 - 3</H2>
+            </div>
+        </div>
+
+        <h1>Hola estoy dentro del div</h1>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- UN EJEMPLO DE XML - 
+
+ <universidad 
+    nombre="Escuela Politecnica Nacional" 
+    estudiantes="2500">
+     <facultad>
+         <nombre>Sistemas</nombre>
+     </facultad>
+     <facultad>
+         <nombre>Electrica</nombre>
+     </facultad>
+     <facultad>
+         <nombre>Mecanica</nombre>
+     </facultad>
+ </universidad>
+
+-->
