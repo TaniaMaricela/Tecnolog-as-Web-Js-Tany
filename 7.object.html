@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Proyecto - Tania Guamushig - Santiago Loya</title>
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+
+    <script src="Semantic-UI-CSS-master/semantic.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class=" inverted ui attached stackable menu">
+      <div class="ui container">
+        <a class="item" href="https://github.com/TaniaMaricela" target="_blank" class="header item"><i class="github icon"></i><span><h4 class="ui purple header">Tania Guamushig</h4></span></a>
+        <a class="item" href="https://github.com/sanierjd" target="_blank" class="header item"><i class="github icon"></i><span><h4 class="ui green header">Santiago Loya</h4></span></a>
+        <a class="item" href="http://semantic-ui.com/" target="_blank" class="header item"><img class="ui avatar image" src="/imagenes/logo.png">
+<span><h4 class="ui teal header">Semantic-UI</h4></span></a>
+        
+        <div class="ui simple dropdown item">
+          <span><h4 class="ui red header"><i class="content icon"></i>MENÚ</h4></span>
+          <i class="dropdown icon"></i>
+            <div class="menu" >
+             <h4 class="ui olive header">Ecmascript 2015</h4>
+              <a href="1.varletconst.html" class="item">1. var vs let vs const</a>
+              <a href="2.iifes.html" class="item">2. IIFEs ahora Blocks</a>
+              <a href="3.arrow.html" class="item">3. Arrow Functions</a>
+              <a href="4.string.html" class="item">4.  Strings .includes() .repeat()</a>
+              <a href="5.template.html" class="item">5.  Template literals</a>
+              <a href="6.arrays.html" class="item">6.  Destructuring arrays</a>
+              <a href="7.object.html" class="item">7.  Destructuring objects</a>
+              <a href="8.modules.html" class="item">8.  Modules export and import</a>
+              <a href="9.parameters.html" class="item">9. Default Parameters, Rest Parameters, Named Parameters</a>
+              <a href="10.spread.html" class="item">10.  Spread Operator</a>
+              <a href="11.classes.html" class="item">11. Classes</a>
+              <a href="12.promises.html" class="item">12. Promises (goodbye callback hell)</a>
+              <a href="13.getset.html" class="item">13. Getter and Setter in Classes</a>
+            </div>
+        </div>
+      </div>
+    </div>    
+    
+    
+    <div class="center aligned segment ui three grid">  
+       <div class="fifteen wide column">
+           <div class="row" style="background-color: #a0c2c3;" class="ui segment">
+             <h class="ui left floated header"><a href="6.arrays.html"><button class="ui green button"><i class="long arrow left icon"></i>Atrás - Destructuring arrays</button></a> </h>
+             <h class="ui right floated header"><a href="8.modules.html"><button class="ui green  button">Siguiente - Modules export and import<i class="long arrow right icon"></i></button></a> </h>
+             <br><br><br><br>
+              <div class="column">
+                  <h1 class="ui header">
+                      <i class="student icon"></i>
+                      <div class="content">Destructuring objects<div class="sub header">objetos</div>
+                      </div>
+                  </h1>
+                  <h1 class="ui left aligned header">
+                      <div class="sub header">La Desestructuración nos permite extraer los valores de las matrices y los objetos (incluso muy anidadas) y almacenarlos en las variables con una sintaxis más conveniente.</div>
+                  </h1>
+              </div>
+              
+              
+              <h1 class="ui left aligned header">
+                  <div class="content">Destructuring Objects
+                      <div class="sub header">
+                          desestructuración de objetos
+                      </div>
+                  </div>
+              </h1>
+              <br>
+              <div class="left aligned ui raised text container segment">
+<pre><code class="JavaScript">var Lucas = {ocupación :' Jedi ' , padre :  ' Anakin ' };
+var ocupación =  Lucas . ocupación ; 
+// 'Jedi' 
+var padre =  Lucas . padre ;
+// 'Anakin'
+dejar que Lucas = {ocupación :' Jedi ', padre :  ' Anakin ' };
+deje {ocupación, padre} = Lucas; consola . log (ocupación); 
+// 'Jedi' de la consola . log (padre);
+// 'Anakin'
+</code></pre>
+              </div>
+              
+           </div>
+       </div>
+    </div>
+    <script>
+        $('.ui.dropdown').dropdown();
+    </script>
+</body>
+
+</html>
