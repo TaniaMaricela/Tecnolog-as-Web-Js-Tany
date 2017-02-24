@@ -1,0 +1,21 @@
+<h1>Productos</h1>
+
+<div class="container">
+  <div class="form-group">
+    <label>Nombre de Producto</label>
+    <input type="text"
+           class="form-control"
+           name="nombre"
+           [(ngModel)]="nuevoProducto.nombre"
+           >
+  </div>
+  <button class="btn btn-block btn-success" (click)="crearProducto(nuevoProducto.nombre)">Crear Producto</button>
+
+  <div class="row">
+    <div class="col-sm-12" *ngFor="let producto of productos">
+      <h1>{{producto.nombre}}</h1>
+      <p>ID:{{producto.id}}</p>
+    </div>
+  </div>
+</div>
+
