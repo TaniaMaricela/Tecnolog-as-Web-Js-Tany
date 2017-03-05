@@ -19,6 +19,10 @@ export class AppComponent implements OnInit {
   tamanoH4 = "52px";
   classes = "btn btn-block btn-success";
 
+  nuevaTienda:any={};
+
+
+
   constructor() {
     this.apellido = "Guamushig";
     this.nombre = "Tania";
@@ -42,5 +46,12 @@ export class AppComponent implements OnInit {
 
   hizoFocus() {
     console.log("Hizo focus");
+  }
+
+  crearTienda(formulario){
+    console.log(formulario);
+    this.http
+      .post(this.masterURL + urlModelo, valores)
+      .map((res: Response) => res.json());
   }
 }
